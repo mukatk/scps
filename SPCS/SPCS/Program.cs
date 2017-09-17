@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SharpLZW;
-using static SPCS.Util.Arquivo;
+using SPCS.Util;
 
 namespace SPCS
 {
@@ -12,8 +12,11 @@ namespace SPCS
     {
         public static void Main(string[] args)
         {
-            Gravar("teste", "teste.scps");
-            string conteudo = Abrir("teste.scps");
+            LZWEncoder encoder = new LZWEncoder();
+            LZWDecoder decoder = new LZWDecoder();
+            string conteudo = Arquivo.Abrir("alice29.txt");
+
+            Arquivo.Gravar(encoder.EncodeToByteList(conteudo), "alice29.scps");
         }
     }
 }
