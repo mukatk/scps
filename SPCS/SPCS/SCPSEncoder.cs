@@ -1,12 +1,12 @@
 ﻿using SharpLZW;
-using SPCS.Util;
+using SCPS.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SPCS
+namespace SCPS
 {
     /// <summary>
     /// Classe responsável por comprimir arquivos

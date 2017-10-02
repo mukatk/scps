@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SPCS.Util
+namespace SCPS.Util
 {
     public static class Arquivo
     {
