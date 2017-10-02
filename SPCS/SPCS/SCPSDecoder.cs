@@ -41,7 +41,7 @@ namespace SCPS
             //Contabiliza apenas os tempos para decompressão. Igora tempo de IO
             Console.WriteLine($"Arquivo descomprimido em {tempoDecorrido} segundos");
 
-            Arquivo.Gravar(conteudo, $"{arquivo.Split('.')[0]} - Descomprimido.scps");
+            Arquivo.Gravar(conteudo, $"{arquivo.Split('.')[0]} - Descomprimido.txt");
         }
     }
 }
