@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace SPCS.Util
+namespace SCPS.Util
 {
     public class HuffmanTree
     {

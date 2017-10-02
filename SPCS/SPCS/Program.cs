@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SharpLZW;
-using SPCS.Util;
+using SCPS.Util;
 
-namespace SPCS
+namespace SCPS
 {
     public class Program
     {
