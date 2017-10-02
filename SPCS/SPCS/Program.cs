@@ -12,11 +12,19 @@ namespace SPCS
     {
         public static void Main(string[] args)
         {
-            LZWEncoder encoder = new LZWEncoder();
-            LZWDecoder decoder = new LZWDecoder();
-            string conteudo = Arquivo.Abrir("alice29.txt");
+            SCPSEncoder.Encode("alice29.txt");
 
-            Arquivo.Gravar(encoder.EncodeToByteList(conteudo), "alice29.scps");
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Aperte qualquer tecla para inicar a descompressão...");
+            Console.WriteLine("--------------------------------------------------");
+            Console.ReadLine();
+
+            SCPSDecoder.Decode("alice29.scps");
+
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Aperte qualquer tecla para encerrar...");
+            Console.WriteLine("--------------------------------------------------");
+            Console.ReadLine();
         }
     }
 }

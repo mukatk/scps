@@ -47,7 +47,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCPSDecoder.cs" />
+    <Compile Include="SCPSEncoder.cs" />
     <Compile Include="Util\Arquivo.cs" />
+    <Compile Include="Util\Huffman.cs" />
+    <Compile Include="Util\Node.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

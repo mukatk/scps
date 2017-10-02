@@ -41,6 +41,23 @@ namespace SPCS.Util
             return conteudo;
         }
 
+        /// <summary>
+        /// Abre um arquivo e retorna os bytes contidos nele
+        /// </summary>
+        /// <param name="arquivo"></param>
+        /// <returns></returns>
+        public static byte[] AbrirEmBytes(string arquivo)
+        {
+            string caminho = GetCaminho(arquivo);
+
+            if (!File.Exists(caminho))
+            {
+                throw new IOException("Arquivo não encontrado");
+            }
+
+            return File.ReadAllBytes(caminho);
+        }
+
         public static void Gravar(byte[] conteudo, string arquivo)
         {
             string caminho = GetCaminho(arquivo);
